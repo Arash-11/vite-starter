@@ -1,0 +1,28 @@
+{
+  "name": "vite-starter",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "A CLI tool to create boilerplate for vanilla TS projects using Vite.",
+  "main": "index.js",
+  "bin": {
+    "vite-starter": "bin/index.js"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Arash-11/vite-starter.git"
+  },
+  "publishConfig": {
+    "@arash-11:registry":"https://npm.pkg.github.com"
+  },
+  "keywords": ["vite", "vanilla", "TS", "boilerplate", "cli"],
+  "author": "Arash-11",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/Arash-11/vite-starter/issues"
+  },
+  "homepage": "https://github.com/Arash-11/vite-starter#readme",
+  "dependencies": {
+    "fs-extra": "^10.1.0"
+  }
+}

@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: dark light;
+  color: var(--clr-white-1);
+  background-color: var(--clr-black-2);
+}
+
+/* Allow percentage-based heights in the application */
+html,
+body {
+  min-height: 100%;
+}
+
+/* https://css-tricks.com/fixing-smooth-scrolling-with-find-on-page/ */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+img,
+picture {
+  /* ensures that images shrink as the viewport or their space gets narrower */
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  /* unlike many other elements, these elements don't inherit the font properties */
+  font: inherit;
+}
+
+button {
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
