@@ -1,4 +1,4 @@
-# vite-starter
+# :zap: vite-starter
 
 A CLI tool to create boilerplate for vanilla TS + SCSS projects using Vite.
 
