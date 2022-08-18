@@ -1,6 +1,6 @@
 # vite-starter
 
-A CLI tool to create boilerplate for vanilla TS projects using Vite.
+A CLI tool to create boilerplate for vanilla TS + SCSS projects using Vite.
 
 To get started, just run `npx vite-starter <your-project-name>`!
 
